@@ -8,17 +8,28 @@ body {
 }
 
 .middle {
+    display:block;
     position: absolute;
     top:5%;
+    width:1000px;
+    
+
 }
 
 #middle-wrap {
     display:block;
 }
 
-#middle-wrap > div:nth-child(1) {text-align: center;}
+/* #middle-wrap > div:nth-child(1) {text-align: center;} */
 
-
+.google-doodleoftheday-container {
+    width:500px;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    padding-left: .30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 .google-doodleoftheday-container img {
     width:413px;
     height:158px;
@@ -41,20 +52,33 @@ body {
     background-color: #fff;
     border: none;
 }
-
+.form-container {
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .form-container .form-wrap .searchbox-container input[type="text"] {
     width: 32.5rem;
     height: 2.45rem;
+    border-radius: 25rem;
     background-color: #fff;
     background-image: url("http://www.w3.org/2000/svg");
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding-left: 40px;
-}
-.form-container {
-    padding: 20px;
+    margin: .15rem;
 }
 
+.form-container .form-wrap .btn-container button {
+    padding: .45rem .75rem .45rem .75rem;
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+    border-color: #f8f9fa;
+}
+
+.form-container .form-wrap .btn-container button:hover {
+    border-color: grey;
+}
 
 
 .footer {
