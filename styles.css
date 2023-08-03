@@ -64,13 +64,46 @@ body {
     height: 2.45rem;
     border-radius: 25rem;
     background-color: #fff;
-    background-image: url("http://www.w3.org/2000/svg");
+    background: url("http://www.w3.org/2000/svg");
     background-repeat: no-repeat;
-    background-size: 30px;
+    background-size: 30px 30px;
     margin: auto auto 1.75rem auto;
     
 }
 
+.searchbox-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+}
+
+.searchbox-container .magnifying-glass i {
+    background: url("http://www.w3.org/2000/svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.searchbox-container .search-by-voice i {
+    text-decoration: underline;
+    background: url("http://www.w3.org/2000/svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+.searchbox-container .search-by-image i {
+    text-decoration: underline;
+    background: url("http://www.w3.org/2000/svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
 
 .form-container .form-wrap .btn-container button {
     padding: .45rem .75rem .45rem .75rem;
