@@ -67,6 +67,24 @@ body {
     text-decoration: underline;
 }
 
+#header-wrap > div:nth-child(2) > ul > li:nth-child(4) > a > button {
+    width: 5.25rem;
+    height: 2.5rem;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1a73e8;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#header-wrap > div:nth-child(2) > ul > li:nth-child(4) > a > button:hover {
+    background-color: #1562c8;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
 .middle {
     display:block;
     position: absolute;
@@ -76,11 +94,10 @@ body {
 
 }
 
-#middle-wrap {
-    
+#middle-wrap > div.form-container > form > div > div.searchbox-container > input[type=text]:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* #middle-wrap > div:nth-child(1) {text-align: center;} */
 
 .google-doodleoftheday-container {
     width:500px;
