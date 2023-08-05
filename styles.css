@@ -7,6 +7,66 @@ body {
     margin: 0;
 }
 
+
+.header {
+    position: absolute;
+    top:0;
+    width:100%;
+    background-color: grey;
+}
+
+.header p {
+    display: inline-block;
+    font-size: .90em;
+}
+
+.header p:hover {
+    text-decoration: underline;
+}
+
+
+.header-container {
+    max-width: 1600px;
+    padding: 0 50px;
+    background: #fff;
+}
+
+#header-wrap {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header-wrap > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header-wrap > div:nth-child(1) {text-align: left;}
+#header-wrap > div:nth-child(2) {text-align: right;}
+
+.header-links ul {
+    padding: 0;
+}
+
+.header-links ul li {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: .85em;
+    color: #000;
+}
+
+.header-links ul li a {
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+}
+
+.header-links ul li a:hover {
+    text-decoration: underline;
+}
+
 .middle {
     display:block;
     position: absolute;
