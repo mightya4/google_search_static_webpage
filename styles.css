@@ -40,7 +40,10 @@ input {
     font-family: "Material Symbols Outlined";
     font-size: 1.40rem;
     content: "Apps";
+    color: #5f656c;
+    vertical-align: middle;
 }
+
 #header-wrap {
     display: table;
     table-layout: fixed;
@@ -75,6 +78,10 @@ input {
 
 .header-links ul li a:hover {
     text-decoration: underline;
+}
+
+#header-wrap > div:nth-child(2) > ul > li:nth-child(3) > a:hover {
+    text-decoration: none;
 }
 
 #header-wrap > div:nth-child(2) > ul > li:nth-child(4) > a > button {
