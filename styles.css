@@ -6,9 +6,9 @@ body {
     padding: 0;
     margin: 0;
 }
-
-main {
-    /* add grid here */
+input {
+    border: none;
+    outline: none;
 }
 
 .header {
@@ -94,13 +94,16 @@ main {
 }
 
 .middle {
-    display:block;
+    margin: auto;
     position: absolute;
-    top:5%;
+    top: 25%;
+    bottom: 25%;
     width:100%;
+    box-sizing: border-box;
     
 
 }
+
 
 
 #middle-wrap > div.form-container > form > div > div.searchbox-container > input[type=text]:hover {
@@ -116,8 +119,7 @@ main {
     padding-top: .15rem;
     padding-bottom: .15rem;
     padding-left: .30rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
 }
 .google-doodleoftheday-container img {
@@ -142,17 +144,17 @@ main {
     filter: opacity(.62);
 } */
 
-.form-container {
+/* .form-container {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
+} */
 
-.form-container .form-wrap {
-    
-    position: relative;
-    width: 100%;
+.form-container .form-wrap .input-box, .btn-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 .magnifying-glass::before {
@@ -168,27 +170,33 @@ main {
     text-decoration: none;
 }
 
-#middle-wrap > div.form-container > form > div > div.input-box > i.search-by-image > img {
+.form-container .input-box .right-icon-container .search-by-voice img,.search-by-image img {
     height:  1.5rem;
     width:  1.5rem;
 }
 
-#middle-wrap > div.form-container > form > div > div.input-box > i.search-by-voice > img {
-    height: 1.5rem;
-    width:  1.5rem;
+.form-container .form-wrap .input-box input {
+    height:  1.5rem;
+    width:  30.5rem;
 }
 
-.form-container .form-wrap .searchbox-container input[type="text"] {
-    width: 100%;
-    height: 2.45rem;
-    border-radius: 25rem;
-    background-color: #fff;
-    background: url("http://www.w3.org/2000/svg");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    margin: auto auto 1.75rem auto;
-    
+.form-container .form-wrap .input-box {
+    width: 600px;
+    height: 40px;
+    margin: 1.75rem auto 1.75rem auto;
+    padding: 2px;
+    border-radius: 50px;
+    border: 1px solid #dfe1e5;
+    outline-color: none;
+    cursor: text;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+.form-container .form-wrap .input-box:hover {
+    box-shadow: 1px 1px 5px 1px rgba(116, 114, 114, 0.2), 1px 1px 5px 1px rgba(111, 109, 109, 0.19);
+    }
 
 .searchbox-container {
     display: inline-block;
@@ -200,20 +208,9 @@ main {
     padding: 0.5rem 0;
 }
 
-
-/* .searchbox-container .search-by-voice i {
-    text-decoration: underline;
-    background: url("http://www.w3.org/2000/svg");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
+.form-container .form-wrap .btn-container {
+    text-align: center;
 }
-
-.searchbox-container .search-by-image i {
-    text-decoration: underline;
-    background: url("http://www.w3.org/2000/svg");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-} */
 
 .form-container .form-wrap .btn-container button {
     padding: .45rem .75rem .45rem .75rem;
