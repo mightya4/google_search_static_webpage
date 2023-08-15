@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 input {
     border: none;
     outline: none;
@@ -32,16 +33,23 @@ input {
 
 .header-container {
     max-width: 1600px;
-    padding: 0 50px;
+    padding-right: 5px;
+    padding-left: 25px;
     background: #fff;
 }
 
-#header-wrap > div:nth-child(2) > ul > li:nth-child(3) > a::before {
+#header-wrap > div:nth-child(2) > ul > li:nth-child(3) > a {
     font-family: "Material Symbols Outlined";
     font-size: 1.40rem;
-    content: "Apps";
     color: #5f656c;
     vertical-align: middle;
+    padding: 6px 10px 6px 10px;
+    
+}
+
+#header-wrap > div:nth-child(2) > ul > li:nth-child(3) > a:hover {
+    background-color: #70757a14;
+    border-radius: 50%;
 }
 
 #header-wrap {
@@ -85,7 +93,7 @@ input {
 }
 
 #header-wrap > div:nth-child(2) > ul > li:nth-child(4) > a > button {
-    width: 5.25rem;
+    width: 6rem;
     height: 2.5rem;
     font-size: 14px;
     color: #fff;
@@ -150,8 +158,10 @@ input {
     color:#aaa;
     content: "search";
     vertical-align: middle;
-    padding: 6px;
+    padding-left: 12px;
     text-decoration: none;
+    font-size: 19px;
+    font-style: normal;
 }
 
 .form-container .input-box .right-icon-container .search-by-voice img,.search-by-image img {
@@ -222,7 +232,7 @@ input {
 
 .footer-container {
     max-width: 1600px;
-    padding: 0 50px;
+    padding: 0 30px;
     background: #f2f2f2;
 }
 
