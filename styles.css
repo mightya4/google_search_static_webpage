@@ -169,6 +169,10 @@ input {
     width:  1.5rem;
 }
 
+.search-by-voice {
+    padding-right: 10px;
+}
+
 .form-container .form-wrap .input-box input {
     height:  1.5rem;
     width:  30.5rem;
